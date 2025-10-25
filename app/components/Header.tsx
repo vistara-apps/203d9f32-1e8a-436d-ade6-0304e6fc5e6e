@@ -6,13 +6,6 @@ import { useState } from 'react';
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'Markets', href: '/markets' },
-    { label: 'Profile', href: '/profile' },
-    { label: 'Leaderboard', href: '/leaderboard' },
-  ];
-
   return (
     <header className="sticky top-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-primary/20">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
@@ -27,19 +20,22 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium"
-              >
-                {item.label}
-              </a>
-            ))}
+            <a href="#" className="text-text-primary hover:text-primary transition-colors duration-200 font-medium">
+              Home
+            </a>
+            <a href="#" className="text-text-secondary hover:text-primary transition-colors duration-200">
+              Markets
+            </a>
+            <a href="#" className="text-text-secondary hover:text-primary transition-colors duration-200">
+              Profile
+            </a>
+            <a href="#" className="text-text-secondary hover:text-primary transition-colors duration-200">
+              Leaderboard
+            </a>
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <button className="p-2 hover:bg-primary/10 rounded-lg transition-colors duration-200 relative">
               <Bell className="w-5 h-5" />
               <span className="absolute top-1 right-1 w-2 h-2 bg-danger rounded-full"></span>
@@ -50,7 +46,7 @@ export function Header() {
             <button className="hidden md:block px-4 py-2 bg-primary hover:bg-accent rounded-lg font-semibold transition-all duration-200">
               Connect
             </button>
-            <button
+            <button 
               className="md:hidden p-2 hover:bg-primary/10 rounded-lg transition-colors duration-200"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -62,16 +58,19 @@ export function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-primary/20 animate-fade-in">
-            <nav className="flex flex-col gap-2">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-primary/10 rounded-lg transition-all duration-200"
-                >
-                  {item.label}
-                </a>
-              ))}
+            <nav className="flex flex-col gap-3">
+              <a href="#" className="px-4 py-2 hover:bg-primary/10 rounded-lg transition-colors duration-200">
+                Home
+              </a>
+              <a href="#" className="px-4 py-2 hover:bg-primary/10 rounded-lg transition-colors duration-200">
+                Markets
+              </a>
+              <a href="#" className="px-4 py-2 hover:bg-primary/10 rounded-lg transition-colors duration-200">
+                Profile
+              </a>
+              <a href="#" className="px-4 py-2 hover:bg-primary/10 rounded-lg transition-colors duration-200">
+                Leaderboard
+              </a>
               <button className="mx-4 mt-2 px-4 py-2 bg-primary hover:bg-accent rounded-lg font-semibold transition-all duration-200">
                 Connect Wallet
               </button>
