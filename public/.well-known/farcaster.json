@@ -10,7 +10,7 @@
     "iconUrl": "https://trendbet.xyz/logo-256x256.png",
     "splashImageUrl": "https://trendbet.xyz/splash-200x200.png",
     "splashBackgroundColor": "#0a1929",
-    "homeUrl": "https://trendbet.xyz/miniapp",
-    "webhookUrl": "https://trendbet.xyz/api/farcaster-webhook"
+    "homeUrl": "https://app-e6fc5e6e-kd4x.vercel.app",
+    "webhookUrl": "https://app-e6fc5e6e-kd4x.vercel.app/api/webhook"
   }
 }

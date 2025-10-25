@@ -1,0 +1,14 @@
+{
+  "name": "TrendBet",
+  "description": "TrendBet is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://203d9f32-1e8a-436d-ade6-0304e6fc5e6e.vercel.app",
+  "properties": {
+    "app": {
+      "name": "TrendBet",
+      "description": "TrendBet is a Base Mini App built with Zara.",
+      "url": "https://203d9f32-1e8a-436d-ade6-0304e6fc5e6e.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
